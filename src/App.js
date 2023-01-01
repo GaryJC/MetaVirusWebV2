@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Home from "./components/home/Home";
+import { ParallaxProvider } from "react-scroll-parallax";
+import HomeV2 from "./components/home/HomeV2";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <ParallaxProvider>
+    //   <Home />
+    //   {/* <div style={{ height: 1000, backgroundColor: "#331732" }} /> */}
+    //   <div style={{ height: 1000 }} />
+    // </ParallaxProvider>
+    <>
+      <HomeV2 />
+      <div
+        style={{
+          height: "3000px",
+          backgroundColor: "#331732",
+          position: "relative",
+          zIndex: 10,
+          // top: 0,
+          marginTop: 70,
+        }}
+      />
+      <div style={{ height: 1000 }} />
+    </>
   );
 }
 
