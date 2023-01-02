@@ -1,7 +1,11 @@
 import "./App.css";
-import Home from "./components/home/Home";
-import { ParallaxProvider } from "react-scroll-parallax";
+// import Home from "./components/home/Home";
+// import { ParallaxProvider } from "react-scroll-parallax";
 import HomeV2 from "./components/home/HomeV2";
+
+import Discover from "./components/discover/Discover";
+import Card from "./components/card/Card";
+
 function App() {
   return (
     // <ParallaxProvider>
@@ -20,8 +24,13 @@ function App() {
           // top: 0,
           marginTop: 75,
         }}
-      />
-      <div style={{ height: 1000 }} />
+      >
+        <Discover />
+        <Card />
+      </div>
+      {/* <div style={{ height: 1000 }} /> */}
+      {/* <ParallaxPage /> */}
+      {/* <HomeV2 /> */}
     </>
   );
 }

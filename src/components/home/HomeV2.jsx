@@ -1,28 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./style.scss";
 function HomeV2() {
   const parallax = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", function (event) {
       var top = this.window.pageYOffset;
-
       var layers = document.getElementsByClassName("parallax");
-      // var layers = parallax.current;
-      // console.log(layers);
       var layer, speed, yPos;
       for (var i = 0; i < layers.length; i++) {
         layer = layers[i];
         speed = layer.getAttribute("data-speed");
         yPos = -((top * speed) / 100);
-        console.log(top);
-        // layer.setAttribute(
-        //   "style",
-        //   "transform: translate(0px, " + yPos + "px, 0px)"
-        // );
-        // layer.style.transform = "translate(0px, " + yPos + "px, 0px)";
-        // if (top < 600) {
         layer.style.transform = `translateY(${yPos}px)`;
-        // }
       }
     });
   }, []);
