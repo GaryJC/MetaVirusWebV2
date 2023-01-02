@@ -53,7 +53,7 @@ function HomeV2() {
       <div
         className="keyart_layer parallax"
         id="keyart-5"
-        data-speed="50"
+        data-speed="52"
       ></div>
       <div
         className="keyart_layer parallax"

@@ -18,7 +18,7 @@ function App() {
           position: "relative",
           zIndex: 10,
           // top: 0,
-          marginTop: 70,
+          marginTop: 75,
         }}
       />
       <div style={{ height: 1000 }} />
