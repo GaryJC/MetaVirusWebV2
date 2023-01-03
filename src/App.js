@@ -1,11 +1,14 @@
 import "./App.css";
-// import Home from "./components/home/Home";
-// import { ParallaxProvider } from "react-scroll-parallax";
-import HomeV2 from "./components/home/HomeV2";
-
+import Home from "./components/home/Home";
+import { ParallaxProvider } from "react-scroll-parallax";
 import Discover from "./components/discover/Discover";
 import Card from "./components/card/Card";
-
+import TimeLine from "./components/econ/Timeline";
+import TokenChart from "./components/econ/TokenChart";
+import LiquidityChart from "./components/econ/LiquidityChart";
+import GameVideo from "./components/gameVideo/GameVideo";
+import ParallaxPage from "./components/parallax/ParallaxPage";
+import Chart from "./components/econ/Chart";
 function App() {
   return (
     // <ParallaxProvider>
@@ -14,23 +17,41 @@ function App() {
     //   <div style={{ height: 1000 }} />
     // </ParallaxProvider>
     <>
-      <HomeV2 />
-      <div
-        style={{
-          height: "3000px",
-          backgroundColor: "#331732",
-          position: "relative",
-          zIndex: 10,
-          // top: 0,
-          marginTop: 75,
-        }}
-      >
-        <Discover />
-        <Card />
-      </div>
-      {/* <div style={{ height: 1000 }} /> */}
-      {/* <ParallaxPage /> */}
-      {/* <HomeV2 /> */}
+      <ParallaxProvider>
+        <Home />
+
+        <div
+          style={{
+            backgroundColor: "#331732",
+            position: "relative",
+            zIndex: 10,
+            marginTop: -1,
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <GameVideo />
+
+          <Card />
+          <Discover />
+          <h2
+            style={{
+              color: "white",
+              fontSize: "2em",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >
+            Process
+          </h2>
+
+          <TimeLine />
+          {/* <TokenChart />
+          <LiquidityChart /> */}
+          <Chart />
+        </div>
+      </ParallaxProvider>
     </>
   );
 }

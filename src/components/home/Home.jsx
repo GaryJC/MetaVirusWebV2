@@ -1,95 +1,64 @@
-import { ParallaxBanner } from "react-scroll-parallax";
-// import "./home.scss";
-const Home = () => {
-  return (
-    <div
-      style={{
-        backgroundImage: "url('/img/bg_13.png')",
-        height: "100vh",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        zIndex: -1,
-        position: "relative",
-      }}
-    >
-      <ParallaxBanner
-        style={{
-          height: "1200px",
-          // position: "absolute",
-          //   aspectRatio: "2 / 1",
-        }}
-        layers={[
-          // {
-          //   image: "/img/bg_3.png",
-          // },
-          // {
-          //   image: "/img/bg_5.png",
-          //   speed: -40,
-          // },
-          {
-            image: "/img/bg_6.png",
-            // speed: -35,
-            translateY: [0, -10],
-            // scale: [1, 1],
-            shouldAlwaysCompleteAnimation: true,
-            shouldDisableScalingTranslations: true,
-          },
-          {
-            image: "/img/bg_7.png",
-            // speed: -25,
-            translateY: [0, -20],
-            shouldAlwaysCompleteAnimation: true,
-            shouldDisableScalingTranslations: true,
-          },
-          // {
-          //   image: "/img/bg_4.png",
-          // },
-          {
-            image: "/img/bg_12.png",
-            translateY: [0, -50],
-            shouldAlwaysCompleteAnimation: true,
-            shouldDisableScalingTranslations: true,
-          },
-          // {
-          //   image: "/img/bg_1.png",
-          //   speed: -20,
-          // },
-          //   {
-          //     image: "/img/bg_8.png",
-          //     speed: -2,
-          //   },
-          //   {
-          //     image: "/img/bg_2.png",
-          //     speed: 0,
-          //   },
-          // {
-          //   image: "/img/bg_10.png",
-          // },
-          // {
-          //   speed: -30,
-          //   children: (
-          //     <div className="title">
-          //       <h1>Meta Virus</h1>
-          //     </div>
-          //   ),
-          // },
+import { useEffect, useRef } from "react";
+import "./style.scss";
+function Home() {
+  const parallax = useRef(null);
+  useEffect(() => {
+    window.addEventListener("scroll", function (event) {
+      var top = this.window.pageYOffset;
+      var layers = document.getElementsByClassName("parallax");
+      var layer, speed, yPos;
+      for (var i = 0; i < layers.length; i++) {
+        layer = layers[i];
+        speed = layer.getAttribute("data-speed");
+        yPos = -((top * speed) / 100);
+        layer.style.transform = `translateY(${yPos}px)`;
+      }
+    });
+  }, []);
 
-          // {
-          //   image: "/img/bg_3.png",
-          //   speed: -20,
-          // },
-        ]}
-        // className="aspect-[2/1]"
-      >
-        {/* <div className="title">
-        <h1>Hello World!</h1>
-      </div> */}
-      </ParallaxBanner>
-      {/* <img id="rockBoundary" src="/img/bg_10.png" alt="rock" /> */}
+  return (
+    <div className="keyart" id="parallax" ref={parallax}>
+      <div className="keyart_layer parallax" id="keyart-0" data-speed="1"></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-1"
+        data-speed="10"
+      ></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-2"
+        data-speed="20"
+      ></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-3"
+        data-speed="35"
+      ></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-4"
+        data-speed="65"
+      ></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-5"
+        data-speed="45"
+      ></div>
+      <div
+        className="keyart_layer parallax"
+        id="keyart-6"
+        data-speed="70"
+      ></div>
+      {/* <div className="keyart_layer" id="keyart-scrim"></div> */}
+      <div
+        className="keyart_layer parallax"
+        id="keyart-7"
+        data-speed="75"
+      ></div>
+      {/* <div className="keyart_layer" id="keyart-8" data-speed="100"></div> */}
+
+      <img id="rockBoundary" src="/img/bg_10.png" alt="rock" />
     </div>
   );
-};
-
+}
 export default Home;

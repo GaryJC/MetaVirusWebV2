@@ -18,10 +18,10 @@ export default function Discover() {
   const { width, height, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { width: "40%", height: "50%", background: "hotpink" },
+    from: { width: "15%", height: "20%", background: "hotpink" },
     to: {
-      width: open ? "80%" : "40%",
-      height: open ? "80%" : "50%",
+      width: open ? "40%" : "15%",
+      height: open ? "50%" : "15%",
       background: open ? "white" : "hotpink",
     },
   });
@@ -42,23 +42,14 @@ export default function Discover() {
   ]);
 
   return (
-    <div style={{ width: "100%", height: "600px" }}>
+    <div style={{ width: "1000px", height: "600px", marginTop: "-20vh" }}>
       <div className="wrapper">
         <animated.div
           style={{ ...rest, width: width, height: height }}
-          className="container"
+          className="disContainer"
           onClick={() => set((open) => !open)}
         >
-          {/* <div
-            className="textContent"
-            style={open ? { display: "none" } : { display: "block" }}
-          >
-            <h2>Discover</h2>
-            <p>
-              Using token economy to create a decentralized and freely traded
-              mobile pet game
-            </p>
-          </div> */}
+          {/* <h2>Download</h2> */}
           {transition((style, item) => (
             <animated.div
               className="item"
