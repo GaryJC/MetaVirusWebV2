@@ -3,7 +3,7 @@ import { useDrag } from "react-use-gesture";
 import { useState } from "react";
 import "./style.scss";
 
-const cards = ["/img/gamefi.JPG", "/img/indis.jpg", "/img/crycir.jpg"];
+const cards = ["/img/gamefi.jpg", "/img/indis.jpg", "/img/crycir.jpg"];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
