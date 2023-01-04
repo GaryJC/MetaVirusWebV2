@@ -3,7 +3,14 @@ import LiquidityChart from "./LiquidityChart";
 import "./style.scss";
 function Chart() {
   return (
-    <div style={{ display: "flex", flexBasis: "100%", marginTop: "15vh" }}>
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        marginTop: "15vh",
+        flexWrap: "wrap",
+      }}
+    >
       <TokenChart />
       <LiquidityChart />
     </div>

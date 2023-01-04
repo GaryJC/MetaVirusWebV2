@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+#astronot {
+  border: none;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 10px;
+  top: 700px;
+}
+
+#rocket {
+  position: absolute;
+  /* bottom: 1200px; */
+  right: 12vw;
+  width: 150px;
+  top: 300px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

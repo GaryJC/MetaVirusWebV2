@@ -1,6 +1,5 @@
 import "./style.scss";
 function TimelineContainer({ time, list, pos, isVisible }) {
-  console.log(list, time, pos);
   const className = isVisible
     ? "content animate__animated animate__fadeIn"
     : "content animate__animated animate__fadeOut";

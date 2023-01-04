@@ -14,6 +14,7 @@ function Home() {
         layer.style.transform = `translateY(${yPos}px)`;
       }
     });
+    console.log("loaded");
   }, []);
 
   return (
@@ -49,14 +50,12 @@ function Home() {
         id="keyart-6"
         data-speed="70"
       ></div>
-      {/* <div className="keyart_layer" id="keyart-scrim"></div> */}
       <div
         className="keyart_layer parallax"
         id="keyart-7"
         data-speed="75"
       ></div>
-      {/* <div className="keyart_layer" id="keyart-8" data-speed="100"></div> */}
-
+      <h1>Meta Virus</h1>
       <img id="rockBoundary" src="/img/bg_10.png" alt="rock" />
     </div>
   );

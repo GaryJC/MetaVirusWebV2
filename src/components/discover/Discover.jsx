@@ -44,6 +44,7 @@ export default function Discover() {
   return (
     <div style={{ width: "1000px", height: "600px", marginTop: "-20vh" }}>
       <div className="wrapper">
+        <h2 style={{ width: "100%", textAlign: "center" }}>Free to Play!</h2>
         <animated.div
           style={{ ...rest, width: width, height: height }}
           className="disContainer"

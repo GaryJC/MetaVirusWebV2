@@ -112,7 +112,7 @@ function LiquidityChart() {
     <>
       <div className="liqChart">
         <h2>Liquidity Distribution</h2>
-        <ReactECharts option={option} />
+        <ReactECharts option={option} style={{ height: 400 }} />
       </div>
     </>
   );

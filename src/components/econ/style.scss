@@ -32,69 +32,41 @@
     width: 25px;
     height: 25px;
     right: -12px;
+
     background-color: #fd5b59;
     border: 4px solid #a53054;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-    & :hover {
-      transform: scale(1.2);
-      transition: all 0.2s linear;
-      cursor: pointer;
-    }
   }
 }
 
 /* Place the container to the left */
 .left {
   left: 0;
-  // &::before {
-  //   content: " ";
-  //   height: 0;
-  //   position: absolute;
-  //   top: 22px;
-  //   width: 0;
-  //   z-index: 1;
-  //   right: 30px;
-  //   border: medium solid #5ab7bb;
-  //   border-width: 10px 0 10px 10px;
-  //   border-color: transparent transparent transparent #5ab7bb;
-  // }
 }
 
 /* Place the container to the right */
 .right {
   left: 50%;
-  // &::before {
-  //   content: " ";
-  //   height: 0;
-  //   position: absolute;
-  //   top: 22px;
-  //   width: 0;
-  //   z-index: 1;
-  //   left: 30px;
-  //   border: medium solid #5ab7bb;
-  //   border-width: 10px 10px 10px 0;
-  //   border-color: transparent #5ab7bb transparent transparent;
-  // }
   &::after {
     left: -13px;
   }
 }
 
-/* The actual content */
-// .content {
-//   padding: 20px 30px;
-//   // background-color: #5ab7bb;
-//   position: relative;
-//   border-radius: 6px;
-//   color: white;
-// }
+.financeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .financeContent {
+    flex: 3;
 
-// ul {
-//   width: 30rem;
-//   margin-right: 10;
-// }
+    padding: 2rem;
+  }
+  #tokenSvg {
+    min-width: 250px;
+    flex: 1;
+  }
+}
 
 @mixin chart {
   display: block;
@@ -103,7 +75,8 @@
   margin-bottom: 5rem;
   color: white;
   text-align: center;
-  flex: 0.3;
+  flex: 0.4;
+  min-width: 400px;
 }
 
 .tokenChart {

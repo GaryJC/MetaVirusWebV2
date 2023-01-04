@@ -71,7 +71,7 @@ function TokenChart() {
   return (
     <div className="tokenChart">
       <h2>Token Distribution</h2>
-      <ReactECharts option={option} />
+      <ReactECharts option={option} style={{ height: 500 }} />
     </div>
   );
 }
