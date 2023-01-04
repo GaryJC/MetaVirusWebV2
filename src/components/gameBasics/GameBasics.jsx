@@ -26,6 +26,7 @@ function GameBasics() {
           ></div>
           <div className="container">
             <h2>Q version cute style</h2>
+            {/* <div className="desc">Photo by Ales Krivec</div> */}
           </div>
         </div>
         <div className="grid--item">
