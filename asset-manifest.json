@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MetaVirusWebV2/static/css/main.5b77a866.css",
-    "main.js": "/MetaVirusWebV2/static/js/main.b1036385.js",
+    "main.js": "/MetaVirusWebV2/static/js/main.d1d92b11.js",
     "static/js/787.f62a6b2a.chunk.js": "/MetaVirusWebV2/static/js/787.f62a6b2a.chunk.js",
     "static/media/bg_7.png": "/MetaVirusWebV2/static/media/bg_7.8731750d5caf29adf978.png",
     "static/media/bg_8.png": "/MetaVirusWebV2/static/media/bg_8.ad06d4c5bc4a29a0302a.png",
@@ -13,11 +13,11 @@
     "static/media/bg_2.png": "/MetaVirusWebV2/static/media/bg_2.9b652beb9c2616875cf6.png",
     "index.html": "/MetaVirusWebV2/index.html",
     "main.5b77a866.css.map": "/MetaVirusWebV2/static/css/main.5b77a866.css.map",
-    "main.b1036385.js.map": "/MetaVirusWebV2/static/js/main.b1036385.js.map",
+    "main.d1d92b11.js.map": "/MetaVirusWebV2/static/js/main.d1d92b11.js.map",
     "787.f62a6b2a.chunk.js.map": "/MetaVirusWebV2/static/js/787.f62a6b2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b77a866.css",
-    "static/js/main.b1036385.js"
+    "static/js/main.d1d92b11.js"
   ]
 }
