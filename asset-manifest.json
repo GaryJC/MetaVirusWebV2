@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MetaVirusWebV2/static/css/main.5b77a866.css",
+    "main.js": "/MetaVirusWebV2/static/js/main.6a4a8b00.js",
+    "static/js/787.f62a6b2a.chunk.js": "/MetaVirusWebV2/static/js/787.f62a6b2a.chunk.js",
+    "static/media/bg_7.png": "/MetaVirusWebV2/static/media/bg_7.8731750d5caf29adf978.png",
+    "static/media/bg_8.png": "/MetaVirusWebV2/static/media/bg_8.ad06d4c5bc4a29a0302a.png",
+    "static/media/bg_1.png": "/MetaVirusWebV2/static/media/bg_1.e17509daa32d2a9c9e48.png",
+    "static/media/bg_6.png": "/MetaVirusWebV2/static/media/bg_6.b7d96ad74dea399af17c.png",
+    "static/media/bg_14.png": "/MetaVirusWebV2/static/media/bg_14.599c2d6e199ff085a064.png",
+    "static/media/bg_3.png": "/MetaVirusWebV2/static/media/bg_3.3042ff90b058b7c2079c.png",
+    "static/media/bg_9.png": "/MetaVirusWebV2/static/media/bg_9.1dc8b32d1c25e9e9359c.png",
+    "static/media/bg_2.png": "/MetaVirusWebV2/static/media/bg_2.9b652beb9c2616875cf6.png",
+    "index.html": "/MetaVirusWebV2/index.html",
+    "main.5b77a866.css.map": "/MetaVirusWebV2/static/css/main.5b77a866.css.map",
+    "main.6a4a8b00.js.map": "/MetaVirusWebV2/static/js/main.6a4a8b00.js.map",
+    "787.f62a6b2a.chunk.js.map": "/MetaVirusWebV2/static/js/787.f62a6b2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b77a866.css",
+    "static/js/main.6a4a8b00.js"
+  ]
+}
