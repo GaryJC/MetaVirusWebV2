@@ -63,7 +63,7 @@ function Deck() {
             {...bind(i)}
             style={{
               transform: interpolate([rot, scale], trans),
-              backgroundImage: `url(${cards[i]})`,
+              backgroundImage: `url(${process.env.PUBLIC_URL + cards[i]})`,
             }}
           />
         </animated.div>

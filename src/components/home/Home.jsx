@@ -56,7 +56,11 @@ function Home() {
         data-speed="75"
       ></div>
       <h1>Meta Virus</h1>
-      <img id="rockBoundary" src="/img/bg_10.png" alt="rock" />
+      <img
+        id="rockBoundary"
+        src={process.env.PUBLIC_URL + "/img/bg_10.png"}
+        alt="rock"
+      />
     </div>
   );
 }
