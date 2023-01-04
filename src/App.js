@@ -68,7 +68,7 @@ function App() {
               backgroundImage: "url('space_bg_1.png')",
               width: "100%",
               position: "absolute",
-              top: "200vh",
+              top: "135rem",
               backgroundSize: "100%",
               height: 2000,
               zIndex: -1,

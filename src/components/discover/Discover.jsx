@@ -42,21 +42,32 @@ export default function Discover() {
   ]);
 
   return (
-    <div style={{ width: "1000px", height: "600px", marginTop: "-20vh" }}>
+    <div style={{ width: "1000px", height: "500px", marginTop: "-10rem" }}>
       <div className="wrapper">
-        <h2 style={{ width: "100%", textAlign: "center" }}>Free to Play!</h2>
         <animated.div
           style={{ ...rest, width: width, height: height }}
           className="disContainer"
           onClick={() => set((open) => !open)}
         >
-          {/* <h2>Download</h2> */}
           {transition((style, item) => (
             <animated.div
               className="item"
               style={{ ...style, background: item.css }}
             />
           ))}
+          <div
+            style={
+              open
+                ? { display: "none", position: "absolute" }
+                : {
+                    fontWeight: "bold",
+                    fontSize: "1.2em",
+                    position: "absolute",
+                  }
+            }
+          >
+            Download
+          </div>
         </animated.div>
       </div>
     </div>
